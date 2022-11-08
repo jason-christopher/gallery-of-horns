@@ -1,38 +1,62 @@
-.App {
+header{
+  width: 1500px;
+  margin: 0 auto;
   text-align: center;
+  background-image: linear-gradient(to right, grey, white, grey);
+  padding: 10px 0;
+  border: 1px solid black;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1{
+  font-family: Impact, 'Arial Narrow Bold', sans-serif;
+  font-size: 70px;
+  margin: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+main{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 1000px;
+  margin: 0 auto;
+  background-color: rgb(252, 205, 118);
+  border: 1px solid black;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+article{
+  text-align: center;
+  border: 1px solid black;
+  border-radius: 5px;
+  background-color: lightblue;
+  margin: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+h2{
+  font-family: Helvetica, sans-serif;
+  font-size: 40px;
+  margin: 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+article p{
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 20px;
+}
+
+.beastPic{
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+}
+
+footer{
+  width: 1500px;
+  margin: 0 auto;
+  text-align: center;
+  background-image: linear-gradient(to right, grey, white, grey);
+  border: 1px solid black;
+}
+
+footer p{
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 20px;
+  margin: 10px;
 }
