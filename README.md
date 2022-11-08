@@ -9,27 +9,24 @@ This app allows users to vote on their favorite images of horned beasts.
 ### Feature #1: Display images
 
 * Estimate of time needed to complete: 1 hour
-* Start time: _____
-* Finish time: _____
-* Actual time needed to complete: _____
+* Start time: 2pm
+* Finish time: 2:30pm
+* Actual time needed to complete: 30 minutes
 
 ### Feature #2: Allow users to vote for their favorite beast
 
 * Estimate of time needed to complete: 1 hour
-* Start time: _____
-* Finish time: _____
-* Actual time needed to complete: _____
+* Start time: 3pm
+* Finish time: 3:30pm
+* Actual time needed to complete: 30 minutes
 
 ### Feature #3: Bootstrap
 
 * Estimate of time needed to complete: 1 hour
-* Start time: _____
-* Finish time: _____
-* Actual time needed to complete: _____
+* Start time: 3:30pm
+* Finish time: 5pm
+* Actual time needed to complete: 1.5 hours
 
 Author: Jason Christopher
 
 ## Links and Resources
-
-* [W3 Schools](https://www.w3schools.com/)
-* [Unsplash](https://unsplash.com/)

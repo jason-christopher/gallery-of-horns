@@ -1,8 +1,6 @@
 header{
-  width: 1500px;
-  margin: 0 auto;
   text-align: center;
-  background-image: linear-gradient(to right, grey, white, grey);
+  background-image: linear-gradient(to right, black, green, black);
   padding: 10px 0;
   border: 1px solid black;
 }
@@ -11,72 +9,46 @@ h1{
   font-family: Impact, 'Arial Narrow Bold', sans-serif;
   font-size: 70px;
   margin: 0;
+  color: whitesmoke
 }
 
 main{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  width: 1000px;
+  column-gap: 10px;
   margin: 0 auto;
-  background-color: rgb(252, 205, 118);
+  background-color: lightgreen;
   border: 1px solid black;
 }
 
-article{
-  text-align: center;
-  border: 1px solid black;
-  border-radius: 5px;
-  background-color: lightblue;
-  margin: 10px;
+.card{
+  margin: 10px auto;
+  min-width: 300px;
+  max-width: 500px;
 }
 
-.votes{
-  font-family: 'Times New Roman', Times, serif;
-  font-size: 20px;
-  height: 30px;
-  padding-right: 15px;
-  color: red;
-  font-weight: bold;
-  text-align: right;
-  margin: 0;
-}
-
-h2{
-  font-family: Helvetica, sans-serif;
-  font-size: 40px;
-  margin: 0;
-  padding: 0;
-}
-
-article p{
-  font-family: 'Times New Roman', Times, serif;
-  font-size: 20px;
-}
-
-.beastPic{
-  width: 300px;
-  height: 300px;
+Img{
+  height: 400px;
   object-fit: cover;
-  margin: 0;
   cursor: pointer;
   transition: 0.2s;
 }
 
-.beastPic:hover{
+Img:hover{
   opacity: 0.7;
   border: 2px solid red;
 }
 
-.beastPic:active{
+Img:active{
   opacity: 0.5;
   border: 2px solid black;
 }
 
 footer{
-  width: 1500px;
+  min-width: 1500px;
   margin: 0 auto;
   text-align: center;
-  background-image: linear-gradient(to right, grey, white, grey);
+  background-image: linear-gradient(to right, black, green, black);
   border: 1px solid black;
 }
 
@@ -84,4 +56,5 @@ footer p{
   font-family: 'Times New Roman', Times, serif;
   font-size: 20px;
   margin: 10px;
+  color: whitesmoke;
 }
