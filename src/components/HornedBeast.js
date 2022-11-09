@@ -21,9 +21,13 @@ class HornedBeast extends React.Component {
         <Card.Img 
           variant="top" 
           src={this.props.imageUrl} 
-          onClick={this.handleVote} 
+          onClick={() => {
+            this.handleVote();
+            this.props.handleOpenModal();
+          }}
           alt={this.props.description} 
           title={this.props.title}
+
         />
         <Card.Body>
           <Card.Title>{this.props.title}</Card.Title>

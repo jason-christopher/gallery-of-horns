@@ -1,11 +1,10 @@
 import React from 'react';
 import HornedBeast from './HornedBeast.js';
-import data from '../data.json';
 
 class Main extends React.Component {
   render() {
 
-    let beastArray = data.map(beast => {
+    let beastArray = this.props.data.map(beast => {
       return <HornedBeast
         key = {beast._id}
         title = {beast.title}
@@ -13,6 +12,7 @@ class Main extends React.Component {
         description = {beast.description}
         keyword = {beast.keyword}
         horns = {beast.horns}
+        handleOpenModal = {this.props.handleOpenModal} 
       />
     });
 
