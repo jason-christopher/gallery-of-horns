@@ -1,6 +1,6 @@
 header{
   text-align: center;
-  background-image: linear-gradient(to right, black, green, black);
+  background-image: linear-gradient(to right, blue, cyan, blue);
   padding: 10px 0;
   border: 1px solid black;
 }
@@ -9,7 +9,8 @@ h1{
   font-family: Impact, 'Arial Narrow Bold', sans-serif;
   font-size: 70px;
   margin: 0;
-  color: whitesmoke
+  color: orange;
+  text-shadow: black 2px 2px 2px;
 }
 
 main{
@@ -17,7 +18,7 @@ main{
   grid-template-columns: 1fr 1fr 1fr;
   column-gap: 10px;
   margin: 0 auto;
-  background-color: lightgreen;
+  background-color: rgb(255, 203, 106);
   border: 1px solid black;
 }
 
@@ -25,11 +26,12 @@ main{
   margin: 10px auto;
   min-width: 300px;
   max-width: 500px;
+  border-color: black;
 }
 
 Img{
   height: 400px;
-  object-fit: cover;
+  object-fit: contain;
   cursor: pointer;
   transition: 0.2s;
 }
@@ -44,11 +46,32 @@ Img:active{
   border: 2px solid black;
 }
 
+.modal{
+  text-align: center;
+  font-size: 30px;
+}
+
+.selectedTitle{
+  font-size: 50px;
+  width: 750px;
+  margin: 0 auto;
+}
+
+.picDiv{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.selectedImage{
+  object-fit: contain;
+}
+
 footer{
   min-width: 1500px;
   margin: 0 auto;
   text-align: center;
-  background-image: linear-gradient(to right, black, green, black);
+  background-image: linear-gradient(to right, blue, cyan, blue);
   border: 1px solid black;
 }
 
@@ -56,5 +79,4 @@ footer p{
   font-family: 'Times New Roman', Times, serif;
   font-size: 20px;
   margin: 10px;
-  color: whitesmoke;
 }

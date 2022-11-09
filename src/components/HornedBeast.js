@@ -23,7 +23,7 @@ class HornedBeast extends React.Component {
           src={this.props.imageUrl} 
           onClick={() => {
             this.handleVote();
-            this.props.handleOpenModal();
+            this.props.handleOpenModal(this.props.title, this.props.imageUrl, this.props.description);
           }}
           alt={this.props.description} 
           title={this.props.title}
