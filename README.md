@@ -27,6 +27,13 @@ This app allows users to vote on their favorite images of horned beasts.
 * Finish time: 5pm
 * Actual time needed to complete: 1.5 hours
 
+### Feature #4: Modal
+
+* Estimate of time needed to complete: 3 hours
+* Start time: 2:00pm
+* Finish time: 5pm
+* Actual time needed to complete: 2.5 hours
+
 Author: Jason Christopher
 
 ## Links and Resources
