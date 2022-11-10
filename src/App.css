@@ -14,12 +14,22 @@ h1{
 }
 
 main{
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  column-gap: 10px;
   margin: 0 auto;
   background-color: rgb(255, 203, 106);
   border: 1px solid black;
+}
+
+#form{
+  width: 400px;
+  margin: 10px auto;
+  text-align: center;
+  border: 1px solid black;
+}
+
+article{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 10px;
 }
 
 .card{
