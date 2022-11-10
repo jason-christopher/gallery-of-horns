@@ -14,12 +14,14 @@ class Main extends React.Component {
 
   handleSubmit = (event) => {
     event.preventDefault();
-    let update = this.props.data.filter(beast => {
-      return beast.horns === this.state.requestedNumberOfHorns;
-    });
-    this.setState({
-      newData: update,
-    });
+    if(isNaN(this.state.requestedNumberOfHorns)) {
+      this.setState({ newData: this.props.data });
+    } else {
+      let update = this.props.data.filter(beast => {
+        return beast.horns === this.state.requestedNumberOfHorns;
+      });
+      this.setState({ newData: update });
+    }
   }
 
   handleChange = (event) => {
@@ -64,10 +66,10 @@ class Main extends React.Component {
                 <Form.Control id="TextInput" placeholder="Name of Horned Beast" />
               </Form.Group> */}
               <Form.Group className="mb-3">
-                <Form.Label htmlFor="Select">Search by Number of Horns</Form.Label>
+                <Form.Label id="formLabel" htmlFor="Select">Search by Number of Horns</Form.Label>
                 <Form.Select id="Select" onChange={this.handleChange}>
-                  <option>Number of Horns</option>
-                    {hornsOptions}
+                  <option value="Number of Horns">Number of Horns</option>
+                  {hornsOptions}
                 </Form.Select>
               </Form.Group>
               {/* <Form.Group className="mb-3">
@@ -77,7 +79,7 @@ class Main extends React.Component {
                   label="Can't check this"
                 />
               </Form.Group> */}
-              <Button type="submit">Submit</Button>
+              <Button id="button" type="submit">Submit</Button>
             </fieldset>
           </Form>
           <article>
