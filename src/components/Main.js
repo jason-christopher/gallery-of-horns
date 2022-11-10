@@ -54,32 +54,29 @@ class Main extends React.Component {
       }
     });
 
+    // let compare = [];
+
+
+
     return (
       <>
         <main>
           <Form id="form" onSubmit={this.handleSubmit}>
-            <fieldset 
-              // disabled
-            >
-              {/* <Form.Group className="mb-3">
-                <Form.Label htmlFor="TextInput">Disabled input</Form.Label>
-                <Form.Control id="TextInput" placeholder="Name of Horned Beast" />
-              </Form.Group> */}
+            <fieldset>
               <Form.Group className="mb-3">
-                <Form.Label id="formLabel" htmlFor="Select">Search by Number of Horns</Form.Label>
+                <Form.Label id="formLabel" htmlFor="Select">
+                  Search by Number of Horns
+                </Form.Label>
                 <Form.Select id="Select" onChange={this.handleChange}>
                   <option value="Number of Horns">Number of Horns</option>
                   {hornsOptions}
                 </Form.Select>
               </Form.Group>
-              {/* <Form.Group className="mb-3">
-                <Form.Check
-                  type="checkbox"
-                  id="disabledFieldsetCheck"
-                  label="Can't check this"
-                />
-              </Form.Group> */}
-              <Button id="button" type="submit">Submit</Button>
+              <Button 
+                id="button" 
+                type="submit">
+                  Submit
+              </Button>
             </fieldset>
           </Form>
           <article>
