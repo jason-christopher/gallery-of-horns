@@ -18,12 +18,14 @@ class App extends React.Component {
     }
   }
 
+  // closes the modal when a click triggers this function
   handleCloseModal = () => {
     this.setState({
       isModalShown: false,
     })
   }
 
+  // opens the modal when an image is clicked
   handleOpenModal = (title, URL, Desc) => {
     this.setState({
       isModalShown: true,
@@ -36,18 +38,18 @@ class App extends React.Component {
   render() {
     return (
       <>
-        <Header/>
+        <Header />
         <Main
-          data = {data} 
-          handleOpenModal = {this.handleOpenModal} 
+          data={data}
+          handleOpenModal={this.handleOpenModal}
         />
-        <Footer/>
+        <Footer />
         <SelectedBeast
-          isModalShown = {this.state.isModalShown}
-          handleCloseModal = {this.handleCloseModal}
-          title = {this.state.selectedTitle}
-          imageUrl = {this.state.selectedImageUrl}
-          description = {this.state.selectedDescription}
+          isModalShown={this.state.isModalShown}
+          handleCloseModal={this.handleCloseModal}
+          title={this.state.selectedTitle}
+          imageUrl={this.state.selectedImageUrl}
+          description={this.state.selectedDescription}
         />
       </>
     );

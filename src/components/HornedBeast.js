@@ -20,6 +20,7 @@ class HornedBeast extends React.Component {
       <Card style={{ width: '100%' }} className = "card">
         <Card.Img 
           variant="top" 
+          className='cardImg'
           src={this.props.imageUrl} 
           onClick={() => {
             this.handleVote();
@@ -29,7 +30,7 @@ class HornedBeast extends React.Component {
           title={this.props.title}
 
         />
-        <Card.Body>
+        <Card.Body className="cardBody">
           <Card.Title>{this.props.title}</Card.Title>
           <Card.Subtitle className="mb-2 text-muted">
             {this.state.votes === 0 ? 'No Votes 😢' : `${this.state.votes} ${this.state.votes === 1 ? 'Vote ❤️' : 'Votes ❤️'}`}
