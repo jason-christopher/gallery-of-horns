@@ -1,6 +1,6 @@
 header{
   text-align: center;
-  background-image: linear-gradient(to right, blue, cyan, blue);
+  background-image: linear-gradient(to right, red, orange, yellow, green, blue, green, yellow, orange, red);
   padding: 10px 0;
   border: 1px solid black;
 }
@@ -9,13 +9,13 @@ h1{
   font-family: Impact, 'Arial Narrow Bold', sans-serif;
   font-size: 70px;
   margin: 0;
-  color: orange;
+  color: red;
   text-shadow: black 2px 2px 2px;
 }
 
 main{
   margin: 0 auto;
-  background-color: rgb(255, 203, 106);
+  background-color: cyan;
   border: 1px solid black;
 }
 
@@ -37,23 +37,28 @@ main{
 
 #Select{
   text-align: center;
+  border: 2px solid black;
 }
 
 #button{
   font-family: Impact, 'Arial Narrow Bold', sans-serif;
   font-size: 20px;
-  background-color: cyan;
-  color: blue;
+  background-color: red;
+  color: white;
+  border: 1px solid black;
   box-shadow: black 2px 2px 5px;
+  margin: 5px;
   transition: 0.2s;
 }
 
 #button:hover{
-  color: orange;
+  color: black;
+  opacity: 0.7;
 }
 
 #button:active{
-  color: blue;
+  color: white;
+  opacity: 1;
 }
 
 article{
@@ -64,26 +69,35 @@ article{
 
 .card{
   margin: 10px auto;
-  min-width: 300px;
+  min-width: 420px;
   max-width: 500px;
   border-color: black;
+  background-image: linear-gradient(to right, rgb(200, 200, 200), white, rgb(200, 200, 200));
 }
 
-Img{
+.cardImg{
   height: 400px;
+  margin: 10px auto;
   object-fit: contain;
   cursor: pointer;
   transition: 0.2s;
 }
 
-Img:hover{
+.cardImg:hover{
   opacity: 0.7;
   border: 2px solid red;
 }
 
-Img:active{
+.cardImg:active{
   opacity: 0.5;
   border: 2px solid black;
+}
+
+.cardBody{
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }
 
 .modal{
@@ -111,12 +125,13 @@ footer{
   min-width: 1500px;
   margin: 0 auto;
   text-align: center;
-  background-image: linear-gradient(to right, blue, cyan, blue);
+  background-image: linear-gradient(to right, red, orange, yellow, green, blue, green, yellow, orange, red);
   border: 1px solid black;
 }
 
 footer p{
   font-family: 'Times New Roman', Times, serif;
+  color: red;
   font-size: 20px;
   margin: 10px;
 }
